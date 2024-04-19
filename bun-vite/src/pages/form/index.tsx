@@ -34,6 +34,7 @@ const FormTest = () => {
 
         <InputGroup
           id="userId"
+          autoComplete="false"
           label="아이디"
           placeholder="영문 소문자 또는 영문+숫자 조합 4~30자리"
           errorMessage={errors.userId?.message}
@@ -44,6 +45,7 @@ const FormTest = () => {
           id="password"
           label="비밀번호"
           type="password"
+          autoComplete="false"
           placeholder={"영문+숫자+특수문자 조합 8~15자리"}
           errorMessage={errors.password?.message}
           {...register("password")}
@@ -53,6 +55,7 @@ const FormTest = () => {
           id="passwordCheck"
           label="비밀번호 확인"
           type="password"
+          autoComplete="false"
           placeholder={"비밀번호 확인"}
           errorMessage={errors.passwordCheck?.message}
           {...register("passwordCheck")}

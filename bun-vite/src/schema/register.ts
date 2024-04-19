@@ -4,7 +4,7 @@ export type RegisterSchemaType = z.infer<typeof registerSchema>;
 
 export const registerSchema = z
   .object({
-    email: z.string().email("이메일 형식을 입력해주세요."),
+    email: z.string().email("이메일 형식을 입 력해주세요."),
     userId: z
       .string()
       .regex(

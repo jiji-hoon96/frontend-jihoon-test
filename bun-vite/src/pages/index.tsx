@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const navigate = useNavigate();
+
   return (
     <div>
       <h1>스타일 없는 아무거나 테스트</h1>

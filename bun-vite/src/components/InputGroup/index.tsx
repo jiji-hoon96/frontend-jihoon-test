@@ -14,14 +14,14 @@ const InputGroup = React.forwardRef<HTMLInputElement, InputGroupProps>(
       <div>
         <label htmlFor={id}>
           {label}
-          {required && <span>*</span>}
+          {required && <span style={{ color: "red" }}>*</span>}
         </label>
         <div>
           <Input id={id} ref={ref} errorMessage={errorMessage} {...rest} />
 
           {errorMessage && (
             <div>
-              <p>{errorMessage}</p>
+              <p style={{ color: "red" }}>{errorMessage}</p>
             </div>
           )}
         </div>
